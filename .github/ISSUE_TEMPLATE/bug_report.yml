@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible software or documentation problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "For vulnerabilities, use the private security reporting route. Do not include secrets, customer records, or confidential site details."
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Identify the affected version and environment without private URLs or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and observed behavior
+      description: Describe the problem and who or what it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic data and the smallest safe example that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence and known limits
+      description: Include relevant results and any unverified assumptions. Inspect logs and screenshots for sensitive content first.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Information check
+      options:
+        - label: I checked that this report contains no credentials, customer data, or confidential details.
+          required: true

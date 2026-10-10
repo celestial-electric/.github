@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security concern privately
+    url: https://github.com/celestial-electric/.github/blob/main/SECURITY.md
+    about: Use the private reporting instructions; do not post vulnerability details in a public issue.
+  - name: Celestial Electric services and business inquiries
+    url: https://www.celestialelectric.com
+    about: Contact Celestial Electric about electrical, solar, storage, and project services.
